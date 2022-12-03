@@ -1,0 +1,144 @@
+:root {
+    --color1: coral;
+    --color2: #aeaeae;
+    --color3: white;
+    
+}
+
+body {
+    background-color: #151515;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+div.back{
+    background: url(cover2.png) no-repeat;            
+    position: fixed;
+    background-size: cover;
+    border:solid white 2PX;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;    
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;       
+    
+    
+}
+
+img.logo {
+    height: 200px;
+    left: 50%;
+    position: relative;
+    margin-left: -100px;
+    margin-top: 15px
+}
+
+div.cov{
+    background: url(triangleblack.png) no-repeat center/ 100% 100%;
+    margin-top: 0px;
+    flex: 1;            
+}       
+
+div.button{
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom:10px ;
+}
+
+a.button  {
+    padding: 8px 20px;
+    border: 3px solid coral;
+    color: coral;       
+    text-decoration: none;
+    background-color: #000000f9;
+    }
+
+a.button:hover  {
+    padding: 8px 20px;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    background-color: #000000f9;
+    }
+
+
+
+div.cov h1 {
+    color: var(--color3);
+    font-size: clamp(15px, 5vw, 30px);
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 125px;
+    }
+
+ul.lista{
+    color: var(--color3);
+    text-align: left;            
+    padding-left: 10%;
+    list-style-image: url(hammer.png); 
+    size: 1px;          
+}
+li{
+    font-size:clamp(5px, 5vw, 15px);
+    margin: 5px;
+    }
+div.cover-contact {           
+    position:relative;
+    top: bottom;
+    text-align: center;
+
+    padding-left: 8px;            
+    }
+
+div.cover-contact a{            
+    display:block;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+p.QBCC {
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    padding-left: 10%;
+    position: absolute;
+    bottom:0%
+}
+p.abn {
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    padding-right: 10%;
+    
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    
+}
+
+@media only screen and (max-width: 460px) {
+    
+    div.back{
+        height: 95%      
+    }
+    p.QBCC {
+        padding-left: 3%;
+        
+        font-size:clamp(5px, 5vw, 15px)
+    }
+    p.abn {
+        padding-right: 3%;
+        
+        font-size:clamp(5px, 5vw, 15px)
+    }
+
+
+  }
